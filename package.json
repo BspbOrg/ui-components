@@ -1,0 +1,39 @@
+{
+  "name": "bspb-ui-components",
+  "version": "0.0.1",
+  "description": "A collection of angularjs components used accross BSPB projects",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/BspbOrg/ui-components.git"
+  },
+  "keywords": [
+    "angularjs"
+  ],
+  "author": "Geno Roupsky <geno@roupsky.name> (https://github.com/groupsky)",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/BspbOrg/ui-components/issues"
+  },
+  "homepage": "https://github.com/BspbOrg/ui-components#readme",
+  "browserify": {
+    "transform": [
+      "stringify",
+      "bulkify",
+      "browserify-ngannotate"
+    ]
+  },
+  "devDependencies": {
+    "browserify": "^16.2.2",
+    "browserify-ngannotate": "^2.0.0",
+    "bulk-require": "^1.0.1",
+    "bulkify": "^1.4.2",
+    "stringify": "^5.2.0"
+  },
+  "dependencies": {
+    "angular": "^1.7.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

@@ -1,0 +1,18 @@
+<div class="btn-group">
+    <button type="button"
+            class="btn btn-danger"
+            ng-disabled="!$ctrl.selectedRows.length"
+            confirm="{{ $ctrl.translationPrefix+'_LIST_DELETE_CONFIRM' | translate: $ctrl.selectedRows.length }}"
+            ng-click="$ctrl.deleteRows($ctrl.selectedRows)">
+        <i class="fa fa-trash fa-fw"></i>
+        {{ ::$ctrl.translationPrefix+'_LIST_BUTTON_DELETE' | translate}}
+        <span ng-if="$ctrl.selectedRows.length>1" class="badge">{{$ctrl.selectedRows.length}}</span>
+    </button>
+    <a role="button"
+       class="btn btn-primary"
+       ui-sref=".new"
+    >
+        <i class="fa fa-file-o fa-fw"></i>
+        {{ ::$ctrl.translationPrefix+'_LIST_BUTTON_NEW' | translate}}
+    </a>
+</div>

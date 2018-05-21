@@ -1,0 +1,12 @@
+<page-header
+        ng-if="::$ctrl.headerUrl"
+        title="{{ ::$ctrl.translationPrefix + '_LIST_TITLE' | translate }}"
+        subtitle="{{ ::$ctrl.translationPrefix + '_LIST_SUBTITLE' | translate }}">
+    <ng-include src="::$ctrl.headerUrl"></ng-include>
+</page-header>
+
+<page-filters>
+    <ng-include src="::$ctrl.filtersUrl"></ng-include>
+</page-filters>
+
+<ng-include src="::$ctrl.contentUrl"></ng-include>
